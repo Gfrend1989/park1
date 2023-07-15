@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="block-form">
+        <h2> Додати авто</h2>
+
+        <div class="buttons_lvl">
+            <button id = "lvl-1" class="active" value="0">Level-1</button>
+            <button id = "lvl-2">Level-2</button>
+            <button id = "lvl-3">Level-3</button>
+        </div>
+
+        <div class="form-control">
+            <input type="text" name = "numbers" placeholder="Номери авто">
+        </div>
+
+        <div class="form-control">
+            <select name="color">
+                <option value="blue">Синій</option>
+                <option value="green">Зелений</option>
+                <option value="yellow">Жовтий</option>
+                <option value="red">Червоний</option>
+                <option value="orange">Помаранчевий</option>
+                <option value="black">Чорний</option>
+             </select>
+        </div>
+
+        <div class="form-control">
+            <select name="type">
+                <option value="1">Тип 1</option>
+                <option value="2">Тип 2</option>
+                <option value="3">Тип 3</option>
+                <option value="4">Тип 4</option>
+                <option value="5">Тип 5</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <select name="place">
+                <option value="0">Місце 1</option>
+                <option value="1">Місце 2</option>
+                <option value="2">Місце 3</option>
+                <option value="3">Місце 4</option>
+                <option value="4">Місце 5</option>
+                <option value="5">Місце 6</option>
+                <option value="6">Місце 7</option>
+                <option value="7">Місце 8</option>
+                <option value="8">Місце 9</option>
+                <option value="9">Місце 10</option>
+             </select>
+        </div>
+
+        <div class="form-control">
+             <button id="btn-add">Додати авто</button>
+        </div>
+
+    </div>
+
+    <div id="block-parking">
+        <img src="images/lvl1.jpg">
+        <div id="cars-1"></div>
+        <div id="cars-2"></div>
+        <div id="cars-3"></div>
+    </div>
+
+
+
+    <script src = "script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+
+{
+    margin: 0;
+    padding: 0;
+}
+html,
+body
+ {
+    height: 100%;
+}
+body{
+    display: flex;
+}
+#block-form{
+    background: #0bab0b;
+    width: 30%;
+    height: 100%;
+}
+#block-parking{
+    background: #c4c4c4;
+    width: 70%;
+    height: 100%;
+}
+#block-form h2{
+    color: #d5d3d3;
+    font-family: cursive;
+    text-align: center;
+    margin: 20px 0 15px;
+    border-bottom: 5px solid #d5d3d3;
+    padding-bottom: 10px;
+}
+.form-control{
+    margin: 20px 0 20px;
+    text-align: center;
+}
+.form-control input,
+.form-control select,
+.form-control button{
+    width: 75%;
+    margin: 20px 0 20px;
+    text-align: center;
+    height: 30px;
+}
+.form-control button{
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #dcd6d6;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-control button:hover{
+    background: #7a6767;
+}
+.buttons_lvl{
+    width: 75%;
+    margin: 5px auto;
+    text-align: center;
+    height: 30px;
+}
+.buttons_lvl{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.buttons_lvl button{
+    padding: 15px;
+    border-radius: 5px;
+    background: beige;
+    cursor: pointer;
+}
+.buttons_lvl button:hover{
+   background: #efb7b7;
+}
+.buttons_lvl button.active{
+    background: #de4040
+}
+#block-parking{
+    /*display: flex;*/
+    /*align-content: space-around;*/
+    /*justify-content: space-around;*/
+    /*flex-wrap: wrap;*/
+    position: relative;
+}
+#block-parking img{
+    width: 600px;
+    height: 600px;
+    border: solid 3px #5d5b5b;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#block-parking #cars-1,
+#block-parking #cars-2,
+#block-parking #cars-3
+{
+    width: 600px;
+    height:600px;
+    background: rgb(201, 134, 80, 0.5);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#block-parking #cars-2,
+#block-parking #cars-3{
+    display: none;
+}
+.car{
+    width: 80px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 20px;
+}
+.car .top{
+    border-bottom: 1px solid #3b3939;
+    position: relative;
+    width: 100%;
+    height:40px ;
+    border-radius: 10px 10px 15px 15px;
+}
+.car .top .attr{
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    top: 13px;
+    left: 35px;
+    background: gray;
+}
+.car .top::before,
+.car .top::after{
+    content: "";
+    width: 15px;
+    height: 5px;
+    background-color: #f1f107;
+    position: absolute;
+}
+.car .top::before{
+    top: 5px;
+    left: 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+.car .top::after{
+    top: 5px;
+    right: 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.car .middle{
+    border-bottom: 1px solid #3b3939;
+    position: relative;
+    width: 100%;
+    height: 115px;}
+.car .middle .attr{
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    top: 13px;
+    left: 0px;
+    background: gray;
+}
+.car .bottom{
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+.car .bottom::before,
+.car .bottom::after{
+    content: "";
+    width: 15px;
+    height: 5px;
+    background-color: #ec6d07;
+    position: absolute;
+}
+.car .bottom::before{
+    bottom: 0;
+    left: 18px;
+    border-radius: 0px 10px 0px 0px;
+}
+.car .bottom::after{
+    bottom: 0;
+    right: 18px;
+    border-radius: 10px 0px 0px 0px;
+}
+.car.color-blue {
+    background: blue;
+}
+.car.color-green {
+    background: green;
+}
+.car.color-yellow {
+    background: yellow;
+}
+.car.color-red {
+    background: red;
+}
+.car.color-orange {
+    background: orange;
+}
+.car.color-black {
+    background: black;
+}
+
+.car.type-1{
+    height: 210px !important;
+}
+.car.type-1 .bottom {
+    height: 55px !important;
+}
+
+.car.type-2 .middle {
+    height: 65px !important;
+}
+.car.type-2 .bottom{
+    height: 90px !important;
+    width: 77px !important;
+    background: #343333 !important;
+    border: 2px solid #3b3939 !important;
+}
+.car.type-3{
+    height: 125px !important;
+}
+.car.type-3 .middle{
+    height: 75px !important;
+}
+.car.type-3 .bottom{
+    height: 10px !important;
+    background: #e3e1d0;
+}
+.car.type-4 {
+    height: 150px !important;
+}
+.car.type-4  .top{
+    height: 10px !important;
+}
+.car.type-4  .bottom{
+    height: 25px !important;}
+.car.type-5{
+    height: 170px !important;
+}
+.car.type-5 .top{
+    height: 30px !important;
+    border-radius: 8px 8px 8px 8px !important;
+    border: 1px solid #412b03 !important;
+}
+.car.type-5 .top::before{
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 20px 20px !important;
+}
+.car.type-5 .top::after{
+    top: 0;
+    right: 0;
+    border-radius: 20px 20px 20px 20px !important;
+}
+
+
+.car.horizontally{
+    transform: rotate(90deg);
+}
+.car.vertically{
+
+}
